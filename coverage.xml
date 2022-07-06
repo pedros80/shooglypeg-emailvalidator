@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1657111494">
-  <project timestamp="1657111494">
+<coverage generated="1657113494">
+  <project timestamp="1657113494">
     <file name="/home/runner/work/shooglypeg-emailvalidator/shooglypeg-emailvalidator/src/RFCEmailValidator.php">
       <class name="ShooglyPeg\EmailValidator\RFCEmailValidator" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
@@ -16,33 +16,33 @@
     </file>
     <file name="/home/runner/work/shooglypeg-emailvalidator/shooglypeg-emailvalidator/src/Reasons/HasNoTopLevelDomain.php">
       <class name="ShooglyPeg\EmailValidator\Reasons\HasNoTopLevelDomain" namespace="global">
-        <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="1" elements="4" coveredelements="2"/>
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
       </class>
-      <line num="9" type="method" name="code" visibility="public" complexity="1" crap="1" count="5"/>
-      <line num="11" type="stmt" count="5"/>
-      <line num="14" type="method" name="description" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="16" type="stmt" count="0"/>
-      <metrics loc="19" ncloc="19" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="1" elements="4" coveredelements="2"/>
+      <line num="9" type="method" name="code" visibility="public" complexity="1" crap="1" count="6"/>
+      <line num="11" type="stmt" count="6"/>
+      <line num="14" type="method" name="description" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="16" type="stmt" count="1"/>
+      <metrics loc="19" ncloc="19" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
     </file>
-    <file name="/home/runner/work/shooglypeg-emailvalidator/shooglypeg-emailvalidator/src/Reasons/TopLevelDomainInvalidChars.php">
-      <class name="ShooglyPeg\EmailValidator\Reasons\TopLevelDomainInvalidChars" namespace="global">
-        <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="1" elements="4" coveredelements="2"/>
-      </class>
-      <line num="9" type="method" name="code" visibility="public" complexity="1" crap="1" count="2"/>
-      <line num="11" type="stmt" count="2"/>
-      <line num="14" type="method" name="description" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="16" type="stmt" count="0"/>
-      <metrics loc="19" ncloc="19" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="1" elements="4" coveredelements="2"/>
-    </file>
-    <file name="/home/runner/work/shooglypeg-emailvalidator/shooglypeg-emailvalidator/src/Reasons/TopLevelDomainTooShort.php">
-      <class name="ShooglyPeg\EmailValidator\Reasons\TopLevelDomainTooShort" namespace="global">
-        <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="1" elements="4" coveredelements="2"/>
+    <file name="/home/runner/work/shooglypeg-emailvalidator/shooglypeg-emailvalidator/src/Reasons/TopLevelDomainHasInvalidCharacters.php">
+      <class name="ShooglyPeg\EmailValidator\Reasons\TopLevelDomainHasInvalidCharacters" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
       </class>
       <line num="9" type="method" name="code" visibility="public" complexity="1" crap="1" count="3"/>
       <line num="11" type="stmt" count="3"/>
-      <line num="14" type="method" name="description" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="16" type="stmt" count="0"/>
-      <metrics loc="19" ncloc="19" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="1" elements="4" coveredelements="2"/>
+      <line num="14" type="method" name="description" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="16" type="stmt" count="1"/>
+      <metrics loc="19" ncloc="19" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/home/runner/work/shooglypeg-emailvalidator/shooglypeg-emailvalidator/src/Reasons/TopLevelDomainIsTooShort.php">
+      <class name="ShooglyPeg\EmailValidator\Reasons\TopLevelDomainIsTooShort" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+      </class>
+      <line num="9" type="method" name="code" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="11" type="stmt" count="4"/>
+      <line num="14" type="method" name="description" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="16" type="stmt" count="1"/>
+      <metrics loc="19" ncloc="19" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
     </file>
     <file name="/home/runner/work/shooglypeg-emailvalidator/shooglypeg-emailvalidator/src/Validators/HasValidTopLevelDomain.php">
       <class name="ShooglyPeg\EmailValidator\Validators\HasValidTopLevelDomain" namespace="global">
@@ -75,6 +75,6 @@
       <line num="64" type="stmt" count="43"/>
       <metrics loc="67" ncloc="67" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="25" coveredelements="25"/>
     </file>
-    <metrics files="5" loc="153" ncloc="153" classes="5" methods="14" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="27" elements="44" coveredelements="38"/>
+    <metrics files="5" loc="153" ncloc="153" classes="5" methods="14" coveredmethods="14" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="30" elements="44" coveredelements="44"/>
   </project>
 </coverage>
