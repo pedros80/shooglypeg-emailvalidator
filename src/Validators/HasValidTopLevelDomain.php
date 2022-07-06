@@ -6,8 +6,8 @@ use Egulias\EmailValidator\EmailLexer;
 use Egulias\EmailValidator\Result\InvalidEmail;
 use Egulias\EmailValidator\Validation\EmailValidation;
 use ShooglyPeg\EmailValidator\Reasons\HasNoTopLevelDomain;
-use ShooglyPeg\EmailValidator\Reasons\TopLevelDomainInvalidChars;
-use ShooglyPeg\EmailValidator\Reasons\TopLevelDomainTooShort;
+use ShooglyPeg\EmailValidator\Reasons\TopLevelDomainHasInvalidCharacters;
+use ShooglyPeg\EmailValidator\Reasons\TopLevelDomainIsTooShort;
 
 final class HasValidTopLevelDomain implements EmailValidation
 {
@@ -27,12 +27,12 @@ final class HasValidTopLevelDomain implements EmailValidation
         $tld    = $parts[count($parts) - 1];
 
         if (strlen($tld) < 2) {
-            $this->error = new InvalidEmail(new TopLevelDomainTooShort(), '');
+            $this->error = new InvalidEmail(new TopLevelDomainIsTooShort(), '');
             return false;
         }
 
         if (!$this->alphabetical($tld) && !$this->isIntl($tld) && !$this->isIp($domain)) {
-            $this->error = new InvalidEmail(new TopLevelDomainInvalidChars(), '');
+            $this->error = new InvalidEmail(new TopLevelDomainHasInvalidCharacters(), '');
             return false;
         }
 

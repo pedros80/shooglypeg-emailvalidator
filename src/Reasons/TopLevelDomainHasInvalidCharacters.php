@@ -4,7 +4,7 @@ namespace ShooglyPeg\EmailValidator\Reasons;
 
 use Egulias\EmailValidator\Result\Reason\Reason;
 
-class TopLevelDomainInvalidChars implements Reason
+class TopLevelDomainHasInvalidCharacters implements Reason
 {
     public function code(): int
     {
@@ -13,6 +13,6 @@ class TopLevelDomainInvalidChars implements Reason
 
     public function description(): string
     {
-        return 'Invalid Characters In Top Level Domain';
+        return 'Top Level Domain Has Invalid Characters';
     }
 }

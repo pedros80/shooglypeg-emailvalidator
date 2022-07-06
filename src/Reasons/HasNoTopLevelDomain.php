@@ -13,6 +13,6 @@ final class HasNoTopLevelDomain implements Reason
 
     public function description(): string
     {
-        return 'No Top Level Domain';
+        return 'Has No Top Level Domain';
     }
 }

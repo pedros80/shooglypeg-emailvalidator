@@ -4,7 +4,7 @@ namespace ShooglyPeg\EmailValidator\Reasons;
 
 use Egulias\EmailValidator\Result\Reason\Reason;
 
-final class TopLevelDomainTooShort implements Reason
+final class TopLevelDomainIsTooShort implements Reason
 {
     public function code(): int
     {
@@ -13,6 +13,6 @@ final class TopLevelDomainTooShort implements Reason
 
     public function description(): string
     {
-        return 'Top Level Domain Too Short';
+        return 'Top Level Domain Is Too Short';
     }
 }
