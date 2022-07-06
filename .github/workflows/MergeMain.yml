@@ -1,0 +1,25 @@
+name: Tests And Coverage
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  shooglypeg-date-tests:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.0'
+    - uses: actions/checkout@v2
+    - name: Setup Test Environment
+      run: composer install
+    - name: Run phpunit
+      run: vendor/bin/phpunit --coverage-clover=coverage.xml
+    - name: phpunit-coverage-badge
+      uses: timkrase/phpunit-coverage-badge@v1.2.0
+      with:
+        report: coverage.xml
+        push_badge: true
+        repo_token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,20 @@
+name: Tests
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  shooglypeg-date-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.0'
+    - uses: actions/checkout@v2
+    - name: Run Unit tests
+      env:
+        APP_ENV: testing
+      run: vendor/bin/phpunit
