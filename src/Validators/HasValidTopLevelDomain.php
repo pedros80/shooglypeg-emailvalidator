@@ -5,9 +5,9 @@ namespace ShooglyPeg\EmailValidator\Validators;
 use Egulias\EmailValidator\EmailLexer;
 use Egulias\EmailValidator\Result\InvalidEmail;
 use Egulias\EmailValidator\Validation\EmailValidation;
-use ShooglyPeg\EmailValidator\Exceptions\HasNoTopLevelDomain;
-use ShooglyPeg\EmailValidator\Exceptions\TopLevelDomainInvalidChars;
-use ShooglyPeg\EmailValidator\Exceptions\TopLevelDomainTooShort;
+use ShooglyPeg\EmailValidator\Reasons\HasNoTopLevelDomain;
+use ShooglyPeg\EmailValidator\Reasons\TopLevelDomainInvalidChars;
+use ShooglyPeg\EmailValidator\Reasons\TopLevelDomainTooShort;
 
 final class HasValidTopLevelDomain implements EmailValidation
 {

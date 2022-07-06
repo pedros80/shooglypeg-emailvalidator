@@ -1,6 +1,6 @@
 <?php
 
-namespace ShooglyPeg\EmailValidator\Exceptions;
+namespace ShooglyPeg\EmailValidator\Reasons;
 
 use Egulias\EmailValidator\Result\Reason\Reason;
 

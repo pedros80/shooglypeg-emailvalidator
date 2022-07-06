@@ -1,10 +1,10 @@
 <?php
 
-namespace ShooglyPeg\EmailValidator\Exceptions;
+namespace ShooglyPeg\EmailValidator\Reasons;
 
 use Egulias\EmailValidator\Result\Reason\Reason;
 
-final class HasNoTopLevelDomain implements Reason
+class TopLevelDomainInvalidChars implements Reason
 {
     public function code(): int
     {
@@ -13,6 +13,6 @@ final class HasNoTopLevelDomain implements Reason
 
     public function description(): string
     {
-        return 'No Top Level Domain';
+        return 'Invalid Characters In Top Level Domain';
     }
 }
